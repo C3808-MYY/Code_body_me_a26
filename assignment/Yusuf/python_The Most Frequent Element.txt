@@ -1,0 +1,20 @@
+umbers = [1, 3, 7, 4, 3, 0, 3, 6, 3]
+numbers.sort()
+print("numbers:", numbers)
+counted_list = []
+counted_list.append(numbers.count(numbers[0]))
+counted_list.append(numbers.count(numbers[1]))
+counted_list.append(numbers.count(numbers[2]))
+counted_list.append(numbers.count(numbers[3]))
+counted_list.append(numbers.count(numbers[4]))
+counted_list.append(numbers.count(numbers[5]))
+counted_list.append(numbers.count(numbers[6]))
+counted_list.append(numbers.count(numbers[7]))
+counted_list.append(numbers.count(numbers[8]))
+print("Counted list:", counted_list)
+counted_list_2 = counted_list[:]
+counted_list_2.sort(reverse = True)
+print("Counted List 2 sorted:", counted_list_2)
+max_index = counted_list.index(counted_list_2[0])
+print(max_index) #benim ek
+print("the most frequent number is {} and it was {} times repeated".format(numbers[max_index], counted_list[max_index]))
