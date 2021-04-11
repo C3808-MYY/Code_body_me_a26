@@ -1,0 +1,56 @@
+git --version # versionu gösteririr.
+
+git config --global user.name "name"
+
+git config --global user.email "mail"
+
+git config --lis
+
+git init . # .git klasöru oluşturur. . dosya konumu (No comits yet , Untracked files) Status KIRMIZI
+
+git merge --help # komut hakkında bilgi veren internet sayfası açar.
+
+gi status # dosyanın git durumunu gösterir. değişiklikler kırmızı olur.
+
+git clone <url_adres> #remote dan locala çekerken kullanılan komut.
+
+git add . # working directory den staging area ya atar( statüs YEŞİL) comitlenmeye hazır.
+
+git commit -m "commit in adı, hatırlaıcısı" # staging area dan repository e atar. Araftan depoya atar.
+git commit am "commit bilgisi" # daha önce komit yapılan bir klasörde git add yapmadan doğrudan commit yapabilmek icin kullanılır. Working directorden reposity e doğrudan gönderir.
+
+git log # özetle commitleri gösterir.Tarih gün branch bilgileriyle oluşturulmuş hash uniq bir karakter dizini verir. O commiti bu dizinin ilk 5 karakteriyle çağırabiliriz.
+
+git restore --<file or directory> # staging aredan cıkırtır. Yeşilden kırmızıya döner. Commit edeceğimiz listede cıkartır. git rm --cached <file or directory> aynısı. working directory e attık.
+
+git checkout <commit in en az 5 karekteri> # head i o commite e taşır. En son o komitte yapılmış hale götürür. 
+
+git commit --amend # wim açar son son yazdığımın commitin notu gözükür. Commit notu değiştirmeye yarar.
+
+!!!! PROJEYE BAŞLARKEN ÖNCE GİTHUB DA AÇMAK HER ZAMAN DAHA KOLAY VE DAHA GÜVENLİ !!!!
+
+!!!  mainden maine açlışmalı  !!!
+önce github da repo oluştur>url kopyala git remote <url> yapınca oto read_me and .git gelicek.
+
+git clone <url> # git ile github arasında bağ kurar ve remote da local e ceker.
+
+git remote -v  # remote ile local arasında bağlantı kontrol edilir.
+
+git log # commitleri uzunca listeler
+
+git log --pretty=oneline  #  commitleri kısa listeler(id ve aciklama)
+
+git log --oneline  # daha kısa hali
+
+git push # local den remota göndermek için kullanılır. Mainlerie ve öncesinde bağlantını git remoe -v ile konrol et.!!
+
+!!!!   PC OTURDUN MU ÖNCE git pull yap  !!!!
+git fetch #  değişiklikleri indirir ama göstermez. 
+
+git diff main origin/main # local main ile remote main arasındaki farkı gösterir.
+
+git merge # fetch ile cektiklerimizi artık görünür hale getirir.
+
+!!! ORIGIN Remote demek " origin main = remote main "
+
+
