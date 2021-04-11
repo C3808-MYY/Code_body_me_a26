@@ -17,7 +17,8 @@ git clone <url_adres> #remote dan locala çekerken kullanılan komut.
 git add . # working directory den staging area ya atar( statüs YEŞİL) comitlenmeye hazır.
 
 git commit -m "commit in adı, hatırlaıcısı" # staging area dan repository e atar. Araftan depoya atar.
-git commit am "commit bilgisi" # daha önce komit yapılan bir klasörde git add yapmadan doğrudan commit yapabilmek icin kullanılır. Working directorden reposity e doğrudan gönderir.
+
+git commit -am "commit bilgisi" # daha önce komit yapılan bir klasörde git add yapmadan doğrudan commit yapabilmek icin kullanılır. Working directorden reposity e doğrudan gönderir.
 
 git log # özetle commitleri gösterir.Tarih gün branch bilgileriyle oluşturulmuş hash uniq bir karakter dizini verir. O commiti bu dizinin ilk 5 karakteriyle çağırabiliriz.
 
@@ -53,4 +54,6 @@ git merge # fetch ile cektiklerimizi artık görünür hale getirir.
 
 !!! ORIGIN Remote demek " origin main = remote main "
 
-
+<<<< localden remota atarken (localde bi dosya var, remota da repo muz var.)
+<<< local de git init , git remote add origin <url> şu an bağlantı kuruldu. git remote -v OK!! Bağlantıdan sonra: git pull origin main
+<<localde commit yaptık:   git push origin main / git push -u origin main / git push --set-upstream origin main (bunlar localden remota atar) 
