@@ -1,2 +1,0 @@
-değişiklik yapıldı
-
