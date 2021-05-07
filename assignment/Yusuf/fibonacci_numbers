@@ -1,0 +1,10 @@
+i = 0
+j = 1
+
+a= 0
+
+while (j) in range(55):
+    a =i+j
+    i = j
+    j = a
+    print(a)
