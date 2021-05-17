@@ -1,0 +1,10 @@
+ef kont(girdi):
+    input = set(list(girdi))
+    x = {}
+    for i in input:
+        miktar = girdi.count(i)
+        x.update({i:miktar})
+    print("input include thats    :",x)
+
+user_input= input("pleaes enter a sentence:")
+kont(user_input)
